@@ -3,10 +3,10 @@ const ctx = canvas.getContext('2d');
 const scoreElement = document.getElementById('score');
 const highScoreElement = document.getElementById('high-score');
 const startBtn = document.getElementById('start-btn');
-const upBtn = document.getElementById('up-btn');
-const downBtn = document.getElementById('down-btn');
-const leftBtn = document.getElementById('left-btn');
-const rightBtn = document.getElementById('right-btn');
+//const upBtn = document.getElementById('up-btn');
+//const downBtn = document.getElementById('down-btn');
+//const leftBtn = document.getElementById('left-btn');
+//const rightBtn = document.getElementById('right-btn');
 
 // Game settings
 const gridSize = 20;
@@ -212,10 +212,10 @@ document.addEventListener('keydown', (e) => {
 
 // Button controls
 startBtn.addEventListener('click', startGame);
-upBtn.addEventListener('click', () => { if (direction !== 'down') nextDirection = 'up'; });
-downBtn.addEventListener('click', () => { if (direction !== 'up') nextDirection = 'down'; });
-leftBtn.addEventListener('click', () => { if (direction !== 'right') nextDirection = 'left'; });
-rightBtn.addEventListener('click', () => { if (direction !== 'left') nextDirection = 'right'; });
+//upBtn.addEventListener('click', () => { if (direction !== 'down') nextDirection = 'up'; });
+//downBtn.addEventListener('click', () => { if (direction !== 'up') nextDirection = 'down'; });
+//leftBtn.addEventListener('click', () => { if (direction !== 'right') nextDirection = 'left'; });
+//rightBtn.addEventListener('click', () => { if (direction !== 'left') nextDirection = 'right'; });
 
 // Initial setup
 initGame();
